@@ -1,114 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas MCI</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas MCI</title>
 
-<style>
-
-header{
-  display: flex;
-  background-color: rgb(22, 22, 22);
-  text-align: center;
-  border-bottom: 5px solid rgb(0, 0, 0);
-  border-left: 5px solid rgb(0, 0, 0);
-  /*border-radius: 10px;*/
-  color: white;
-  
-}
-body {
-background: rgb(194, 194, 194);
-background-repeat:no-repeat;
-color: rgb(17, 17, 17);
-
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.social-media {
-  display:block;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 35px; 
-  position: fixed;
-  top:50%;
-  right: 0;
-  width: 120px;
-  transform: translateY(-50%);
-
-}
-.social-media button {
-  border-radius: 100%;
-  border-color: rgba(255, 255, 255, 0);
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 10px;
-  
-}
-.social-media button :hover{
-  border-radius: 100%;
-  background-color: rgb(255, 255, 255);
-}
-
-
-.about-me {
-  width: 80%;
-  text-align: center;
-  border-bottom: 5px solid;
-  border-left: 5px solid;
-  border-color: rgb(255, 255, 255);
-  /*border-radius: 30px;*/
-  background-color: rgb(207, 207, 207);
-  margin: 10px;
-}
-
-.projects {
-  width: 80%;
-  text-align: center;
-  border-bottom: 5px solid;
-  border-left: 5px solid;
-  border-color: rgb(255, 255, 255);
-  /*border-radius: 30px;*/
-  background-color: rgb(207, 207, 207);
-  margin: 10px;
-}
-
-.imgtext{
-  margin: 10px;
-  border-radius: 50%;
-}
-
-    </style>
 </head>
 
 <header>
   <h1 style="margin: 10px;">Lucas M.C.I</h1>
-  
+
 </header>
 
 <body>
-    <div class="container">
+  <div class="row">
+    <div class="col-3">
+      <div class="container">
         <div class="social-media">
-          <a href="https://www.facebook.com/LucasMarceloCI/"><button><img src="imgs/fb.png" width="50" height="auto"></button></a>
-          <a href="https://www.linkedin.com/in/lucas-marcelo-4259b8168/"><button><img src="imgs/lin.png" width="50" height="auto"></button></a>
-          <a href="https://www.instagram.com/lucasmci/"><button><img src="imgs/insta.png" width="50" height="auto"></button></a>
+          <a href="https://www.facebook.com/LucasMarceloCI/"><button><img src="imgs/fb.png" width="50"
+                height="auto"></button></a>
+          <a href="https://www.linkedin.com/in/lucas-marcelo-4259b8168/"><button><img src="imgs/lin.png" width="50"
+                height="auto"></button></a>
+          <a href="https://www.instagram.com/lucasmci/"><button><img src="imgs/insta.png" width="50"
+                height="auto"></button></a>
           <a href="https://github.com/LucasMCI"><button><img src="imgs/git.png" width="50" height="auto"></button></a>
-
         </div>
+
         <div class="about-me">
           <h2>Sobre Mim</h2>
-          <p>Olá me chamo Lucas, atualmente trabalho com desenvolvimento web através de uma ferramenta <br>
-            chamada ScriptCase. <br>
+          <p>Olá me chamo Lucas, atualmente trabalho com desenvolvimento web através de uma ferramenta chamada
+            ScriptCase.
+            <br>
             Trabalho com diversas ferramentas da Web sendo elas HTML, CSS, Javascript e PHP, porém com <br>
             um foco maior no PHP junto a banco de dados mySQL. <br>
           </p>
           <p>Já trabalhei com outras ferramentas além do ScriptCase sendo ela o CodeIgniter 3,onde iniciei <br>
-             minha carreira com desenvolvimento web, também tendo um grande foco no PHP. <br>
+            minha carreira com desenvolvimento web, também tendo um grande foco no PHP. <br>
           </p>
           <p>
             Além do desenvolvimento web tenho como hobby o desenvolvimento de jogos através da engine unity3D, <br>
@@ -116,18 +46,34 @@ color: rgb(17, 17, 17);
             e paintTool Sai.
           </p>
         </div>
-        <div class="projects">
-          <h2>Projetos</h2>
-          <p>Atualmente tenho somento 1 projeto publicado sendo um jogo simples desenvolvido em unity2D.</p>
-          <hr>
-          <p>
-            <a href="https://play.google.com/store/apps/details?id=com.DmvGamestudio.HungryNinjaminigame&hl=pt&gl=US"><img class="imgtext" src="imgs/hn.webp" title="Hungry Ninja" style="width: 125px;"></a> <br> 
-            Hungry ninja é um jogo simples onde o objetivo é desviar de obstaculos e coletar alimentos e ganhar pontos. 
-          </p>
-        </div>
       </div>
-      
-    
+    </div>
+
+
+    <div class="col-6">
+      <div class="projects">
+        <h2>Projetos</h2>
+        <p>Atualmente tenho somento 1 projeto publicado sendo um jogo simples desenvolvido em unity2D.</p>
+        <hr>
+        <p>
+          <a href="https://play.google.com/store/apps/details?id=com.DmvGamestudio.HungryNinjaminigame&hl=pt&gl=US"><img
+              class="imgtext" src="imgs/hn.webp" title="Hungry Ninja" style="width: 125px;"></a> <br>
+          Hungry ninja é um jogo simples onde o objetivo é desviar de obstaculos e coletar alimentos e ganhar pontos.
+        </p>
+        <div class="wrapper">
+
+          <img src="imgs/mapa1.JPG">
+          <img src="imgs/mapa2.JPG">
+          <img src="imgs/mapa3.JPG">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
 </body>
 
 </html>
