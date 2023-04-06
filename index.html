@@ -7,15 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucas MCI</title>
-
 </head>
 
-<header>
+<header class="header-0">
   <h1 style="margin: 10px;">Lucas M.C.I</h1>
+  <button id="btn0" class="btn-0"></button>
+  <button id="btn1" class="btn-1"></button>
+  <button id="btn2" class="btn-2"></button>
 
 </header>
 
-<body>
+<body class="body-0">
   <div class="row">
     <div class="col-3">
       <div class="container">
@@ -29,7 +31,7 @@
           <a href="https://github.com/LucasMCI"><button><img src="imgs/git.png" width="50" height="auto"></button></a>
         </div>
 
-        <div class="about-me">
+        <div id="about-me" class="about-me">
           <h2>Sobre Mim</h2>
           <p>Olá me chamo Lucas, atualmente trabalho com desenvolvimento web através de uma ferramenta chamada
             ScriptCase.
@@ -51,7 +53,7 @@
 
 
     <div class="col-6">
-      <div class="projects">
+      <div id="projects" class="projects">
         <h2>Projetos</h2>
         <p>Atualmente tenho somento 1 projeto publicado sendo um jogo simples desenvolvido em unity2D.</p>
         <hr>
@@ -75,5 +77,57 @@
 
 
 </body>
+
+<script>
+
+  function btn0() {
+  var header = document.getElementsByTagName('header')[0];
+  var body = document.getElementsByTagName('body')[0];
+  var about = document.getElementById('about-me');
+  var project = document.getElementById('projects');
+  
+  header.className = 'header-0';
+  body.className = 'body-0';
+  about.className = 'about-me';
+  project.className = 'projects';
+
+}
+
+var botao1 = document.getElementById('btn0');
+botao1.addEventListener('click', btn0);
+  //------------------------------------------------------------------------------//
+  function btn1() {
+  var header = document.getElementsByTagName('header')[0];
+  var body = document.getElementsByTagName('body')[0];
+  var about = document.getElementById('about-me');
+  var project = document.getElementById('projects');
+  
+  header.className = 'header-0';
+  body.className = 'body-1';
+  about.className = 'about-me-1';
+  project.className = 'projects-1';
+
+}
+
+var botao1 = document.getElementById('btn1');
+botao1.addEventListener('click', btn1);
+//---------------------------------------------------------------------------//
+function btn2() {
+  var header = document.getElementsByTagName('header')[0];
+  var body = document.getElementsByTagName('body')[0];
+  var about = document.getElementById('about-me');
+  var project = document.getElementById('projects');
+
+  
+  header.className = 'header-2';
+  body.className = 'body-2';
+  about.className = 'about-me-2';
+  project.className = 'projects-2';
+
+}
+
+var botao1 = document.getElementById('btn2');
+botao1.addEventListener('click', btn2);
+</script>
 
 </html>
